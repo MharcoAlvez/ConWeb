@@ -1,3 +1,3 @@
 # ConWeb
 
-Para a matéria de construção de software para Web.
+Para a matéria de Construção de Software para Web.
