@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     border: 0px;
+    
 }
 
 header{
@@ -9,12 +10,13 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: gray;
+    background-color: darkgray;
 }
 
 
+
 nav ul{
-    background-color: gray;
+    background-color: darkgray;
     display: flex;
     justify-content: space-evenly;
     list-style: none;
@@ -22,7 +24,7 @@ nav ul{
 }
 
 nav ul li{
-    background-color: gray;
+    background-color: darkgray;
     height: 50%;
     width:100% ;
     display: flex;
