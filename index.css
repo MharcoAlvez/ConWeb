@@ -53,25 +53,42 @@ nav ul li a:hover{
 footer{
     position:fixed;
     bottom: 0px;
-    background-color: azure;
     width: 100%;
     text-align: center;
 }
 
-main{
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+footer{
+    
+    background-color: whitesmoke;
+
 }
 
-main section img{
+footer section{
 
-    width: 100px;
-    border-radius: 50px;
-    align-items: center;
-    margin: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
 
+footer section form{
+    display: flex;
+    display: block;
+
+}
+
+footer form input {
+    display: block;
+    color: black;
+    background-color: gray;
+}
+
+footer form button{
+    color: black;
+    background-color: gray;
+}
+
+footer form buttor .hover{
+    color: whitesmoke;
 }
 
 
@@ -79,4 +96,11 @@ section h2{
     
     text-align: center;
 
+}
+
+footer img{
+    width: 50px;
+    border-radius: 50px;
+    margin: 10px;
+    
 }
