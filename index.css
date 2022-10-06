@@ -1,106 +1,109 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
-    
-}
-
-header{
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: darkgray;
-}
-
-
-
-nav ul{
-    background-color: darkgray;
-    display: flex;
-    justify-content: space-evenly;
+*, *:after, *:before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .menu{
+    background: #000;
+  }
+ 
+  .menu .menu-list, .menu .sub-menu{
     list-style: none;
-        
-}
-
-nav ul li{
-    background-color: darkgray;
-    height: 50%;
-    width:100% ;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    
-}
-
-nav ul li:hover{
-    background-color: rgb(77, 75, 75);
-}
-
-nav ul li a{
+  }
+  /* Configura todos os links do nosso menu */
+  .menu a{
+    color: #FFF;
     text-decoration: none;
-    color: black;
-    height: 100%;
-}
-
-nav ul li a:hover{
-    color: whitesmoke;
+    display: block;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing:0.2em;
+  }
+  /* Faz os <li>s ficarem na horizontal */
+  .menu > .menu-list > li{
+    float: left;
+    position: relative;
+  }
+  /* Configura os links do menu principal */
+  .menu > .menu-list > li > a {
+    padding: 20px;
+    margin: 0 5px;
+    background: #000;
     
+  }
+  /* Configura o fundo do menu principal quando com mouse hover */
+  .menu > .menu-list > li:hover a {
+    background: darkgray;
 
+  }
+  /* Mostra o submenu no evento de mouse hover */
+  .menu > .menu-list > li:hover > .sub-menu {
+    display: block;
+  }
+  /* Configura o estilo do submenu */
+  .menu > .menu-list > li > .sub-menu {
+    position: absolute;
+    top: 50px;
+    left: 5px;
+    background: black;
+    min-width: 200px;
+    z-index: 1000;
+    display: none;
+  }
+  /* Configura os links do submenu */
+  .menu > .menu-list > li > .sub-menu > li > a {
+      padding: 10px 20px;
+  }
+  /* Clearfix para o menu */
+  .menu:after {
+    content: '.';
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+  }
+
+  .menu > .menu-list > li > .sub-menu > li > a:hover {
+    color: #444;
+  }
+body{
+    background-color: black;
 }
 
-footer{
-    position:fixed;
+
+main{
+  color:white;
+  font-size: xx-large;
+  font-family:monospace;
+  text-align: center;
+}
+
+main h1{
+  text-align: left;
+}
+main h5{
+  
+  text-align: left;
+}
+
+
+
+footer {
+    position: fixed;
     bottom: 0px;
     width: 100%;
-    text-align: center;
-}
-
-
-footer{
-    
-    background-color: whitesmoke;
-
-}
-
-footer section{
-
     display: flex;
-    justify-content: space-evenly;
-}
-
-footer section form{
-    display: flex;
-    display: block;
-
-}
-
-footer form input {
-    display: block;
-    color: black;
-    background-color: gray;
-}
-
-footer form button{
-    color: black;
-    background-color: gray;
-}
-
-footer form buttor .hover{
-    color: whitesmoke;
+    align-items: center;
+    justify-content:center;
+    color: white;
+    font-family: monospace; 
 }
 
 
-section h2{
-    
-    text-align: center;
-
-}
-
-footer img{
-    width: 50px;
-    border-radius: 50px;
-    margin: 10px;
-    
-}
